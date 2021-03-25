@@ -1,1 +1,3 @@
-loc = [["Fizicko", "Fizika", "Matematika", "Istorija", "TiT", "TiT"], ["Fizicko", "Srpski", "Hemija", "Matematika", "Nemacki", "Geografija", "Odeljenska"], ["Nemacki", "Muzicko", "Matematika", "Fizika", "Nemacki", "Srpski"], ["Matematika", "Informatika", "Engleski", "Biologija", "Istorija", "Sprpski"], ["Fizicko", "Likovno", "Geografija", "Biologija", "Engleski", "Srpski"]]
+['Ponedelak', 'Utorak', 'Sreda', 'Cetvrtak', 'Petak']
+['08:35 - 09:05', '09:10 - 09:40', '09:55 - 10:25', '10:30 - 11:00', '11:05 - 11:35', '11:40 - 12:10', '12:15 - 12:45']
+[["Fizicko", "Fizika", "Matematika", "Istorija", "TiT", "TiT"], ["Fizicko", "Srpski", "Hemija", "Matematika", "Nemacki", "Geografija", "Odeljenska"], ["Nemacki", "Muzicko", "Matematika", "Fizika", "Nemacki", "Srpski"], ["Matematika", "Informatika", "Engleski", "Biologija", "Istorija", "Sprpski"], ["Fizicko", "Likovno", "Geografija", "Biologija", "Engleski", "Srpski"]]
