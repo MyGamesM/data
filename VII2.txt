@@ -1,0 +1,1 @@
+loc = [["Fizicko", "Fizika", "Matematika", "Istorija", "TiT", "TiT"], ["Fizicko", "Srpski", "Hemija", "Matematika", "Nemacki", "Geografija", "Odeljenska"], ["Nemacki", "Muzicko", "Matematika", "Fizika", "Nemacki", "Srpski"], ["Matematika", "Informatika", "Engleski", "Biologija", "Istorija", "Sprpski"], ["Fizicko", "Likovno", "Geografija", "Biologija", "Engleski", "Srpski"]]
