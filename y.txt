@@ -1,1 +1,2 @@
-print(data_dir)
+print("Hello")
+print("Hi")
