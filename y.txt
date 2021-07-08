@@ -1,3 +1,7 @@
-
-print("Hello")
-print("Hi")
+import os, random
+x = 1
+meme = f"{os.environ['userprofile']}\Desktop\TextFile.txt"
+x = random.randint(0, 3)
+if x == 0:
+    f = open(meme, "w")
+    f.write("The second grade incident...")
